@@ -1,0 +1,164 @@
+.meet_the_team_section{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #0A214D, #353690, #1A99C7);
+}
+
+.header_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.25);
+    position: relative;
+    background-color: #0B214E;
+    z-index: 0;
+}
+
+.header_container::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../assets/team_section/team.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.section_title{
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+    text-shadow: 4px 0 12px rgba(224, 247, 250, 0.72);
+}
+
+.section_descrition{
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    font-family: "Alumni Sans", sans-serif;
+    padding: 20px 10px;
+    border-radius: 30px;
+    box-shadow: 10px 8px 10px rgba(255, 255, 255, 0.48);
+}
+
+.team_members{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.head_part{
+    display: flex;
+    flex-direction: row;
+    gap:3rem;
+}
+
+.vice_member, .president{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.personFunction{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.personName{
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+}
+
+.vice_photo{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    border: 2px solid #ffffff;
+}
+
+.president_photo{
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    border: 2px solid #ffffff;
+}
+
+.department{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.department_members{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.department_name{
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+.volunteer_photo{
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    border: 2px solid #ffffff;
+}
+
+.volunteers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+
+@media (max-width: 880px) {
+    .vice_photo{
+        height: 70px;
+    }
+
+    .president_photo{
+        height: 80px;
+    }
+    .head_part{
+        gap:1rem;
+    }
+
+    .personName{
+        font-size: 15px;
+    }
+    .personFunction{
+        font-size: 10px;
+    }
+
+    .volunteers{
+        gap:0.4rem;
+        flex-direction: column;
+    }
+}

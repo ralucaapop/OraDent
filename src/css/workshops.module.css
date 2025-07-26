@@ -1,0 +1,219 @@
+.workshops_section{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #3fcfe7, #353690, #1A99C7);
+    position: relative;
+}
+
+.section_title{
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0;
+    padding-top: 30px;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    z-index: 1;
+}
+
+.image_wrapper1,
+.image_wrapper2 {
+    position: absolute;
+    z-index: 0;
+    width: 600px;
+    height: auto;
+}
+
+.image_wrapper1 {
+    top: 30px;
+    left: 30px;
+}
+
+.image_wrapper2 {
+    bottom: 30px;
+    right: 30px;
+}
+
+.image_wrapper1 img,
+.image_wrapper2 img {
+    width: 600px;
+    height: auto;
+    opacity: 0.7;
+}
+
+.green_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+
+.workshops_presentation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #0A214D;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 8px 10px #ffffff;
+    margin-top: 1rem;
+}
+
+
+.left_arrow{
+    width: 20px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 2rem ;
+    transform: translate(60px, -20px);
+}
+
+.right_arrow{
+    width: 20px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 2rem ;
+    transform: translate(-60px, -20px);
+}
+
+.workshops_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.workshops_title{
+    margin: 2rem 0;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    width: 300px;
+}
+
+.medic_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.medic_photo{
+    height: 185px;
+    width: 160px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.medic_name{
+    color: #16336e;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom:2rem;
+    padding: 10px 5px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+}
+
+.description{
+    color: #CFE8EE;
+    max-width: 300px;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 20px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 0;
+}
+
+.more_details{
+    color: #ffffff;
+    background-color: #0D58A3;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 30px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 0;
+    cursor: pointer;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    border: #B2DFEF 2px solid;
+}
+
+.click_icon{
+    height: 35px;
+    width: 35px;
+}
+
+.more_details:hover {
+    transform: scale(1.1);
+    border: #0D58A3 2px solid;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.workshop_details_flipped{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.workshop_info_title{
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+@media (max-width: 768px) {
+    .image_wrapper1 img,
+    .image_wrapper2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .image_wrapper1 {
+        top:0;
+        left:0;
+    }
+
+    .image_wrapper2 {
+        bottom:0;
+        right:0;
+    }
+
+    .image_wrapper1 ,
+    .image_wrapper2  {
+        width: 100%;
+        height: auto;
+    }
+
+    .description{
+        max-width: 200px;
+    }
+
+    .workshops_presentation{
+        max-width: 300px;
+    }
+}

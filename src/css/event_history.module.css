@@ -1,0 +1,172 @@
+.event_history_container{
+    min-height: 100vh;
+    background-color: white;
+}
+
+.header_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 0 0;
+    margin: 0 1rem;
+}
+
+.event_history_title{
+    padding: 20px 0 0 0;
+    margin: 0;
+    color: #0B214E;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Alumni Sans", sans-serif;
+    text-shadow: 1px -2px 6px rgb(101, 105, 112);
+}
+
+.lego_img{
+    width: 70px;
+    height: 70px;
+    margin-top: 35px;
+}
+
+.history_messsage_container{
+    padding: 1px 15px;
+    background-color: #1A99C8;
+    width: fit-content;
+    margin: 1rem auto;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px #16336e;
+    text-align: center;
+}
+
+
+.history_message{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    padding: 0;
+}
+
+
+.editions_container{
+    padding: 10px 20px;
+}
+
+
+
+.edition_name{
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #16336e;
+    cursor: pointer;
+}
+
+.edition_name:hover{
+    transform: scale(1.02);
+    transition: transform 0.20s ease-in-out;
+    text-shadow: 1px 1px 2px #1A99C7;
+}
+
+.edition1_img{
+    width: 200px;
+    height: 140px;
+    box-shadow: -30px 30px #F1E8CB ;
+    margin-bottom: 1.3rem;
+}
+
+.edition2_img{
+    width: 180px;
+    height: 130px;
+    box-shadow: 30px -30px #B2DFEF ;
+}
+
+.edition_text{
+    font-weight: lighter;
+    color: #0B214E;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 2rem;
+    max-width: 250px;
+}
+
+.edition_text_2{
+    font-weight: lighter;
+    color: #0B214E;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 2rem;
+    max-width: 250px;
+    margin: 0 0 0 auto;
+}
+
+.event_history_container {
+    position: relative;
+    /* restul stilurilor tale */
+}
+
+.circles_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none; /* cercurile să nu blocheze interacțiunile */
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(63, 207, 231); /* sau orice culoare vrei */
+    z-index: 0;
+}
+
+.header_section, .history_messsage_container, .editions_container {
+    position: relative;
+    z-index: 1;
+}
+
+.teeth_icon{
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    .header_section{
+        padding-left: 25px;
+    }
+    .event_history_title {
+        font-size: 35px;
+        margin: 0;
+    }
+    .lego_img{
+        transform: translate(-25px, -5px);
+    }
+
+    .history_messsage_container {
+        padding: 2px 30px;
+        margin: 2rem 2.5rem 1rem 2.5rem;
+    }
+
+    .history_message {
+        font-size: 15px;
+    }
+
+    .edition_name {
+        font-size: 20px;
+    }
+
+    .edition_text {
+        font-size: 16px;
+        max-width: 200px;
+    }
+
+    .edition1_img, .edition2_img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 1.3rem;
+    }
+
+}
