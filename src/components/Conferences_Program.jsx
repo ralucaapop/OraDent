@@ -36,8 +36,9 @@ function Conferences_Program(){
                         SÂMBĂTĂ
                     </h4>
                 </div>
+            </div>
                 {active_day === 0 && (
-                    <>
+                    <div className={styles.conferences_container}>
                         <div className={styles.description}>
                             <p className={styles.description_text}>
                                 Ceremonia de deschidere <br/> ORADENT CONGRESS
@@ -65,13 +66,13 @@ function Conferences_Program(){
                                 </div>
                             </div>
                             <div className={styles.conference1}>
-                            <p className={styles.conference_title}>CALEA CORECTĂ CĂTRE UN ENDO DE SUCCES</p>
-                            <h4 className={styles.doctor_name}>Dr. Radu Borlan</h4>
-                            <div className={styles.conference_time1}>
-                                <img src={time_icon_black} alt={'Time'} className={styles.time_logo1}/>
-                                <h3 className={styles.time2}>9:30 - 10:30</h3>
+                                <p className={styles.conference_title}>CALEA CORECTĂ CĂTRE UN ENDO DE SUCCES</p>
+                                <h4 className={styles.doctor_name}>Dr. Radu Borlan</h4>
+                                <div className={styles.conference_time1}>
+                                    <img src={time_icon_black} alt={'Time'} className={styles.time_logo1}/>
+                                    <h3 className={styles.time2}>9:30 - 10:30</h3>
+                                </div>
                             </div>
-                        </div>
                         </div>
 
                         <div className={styles.lunch_time}>
@@ -85,7 +86,7 @@ function Conferences_Program(){
                             <img src={coffe_break} className={styles.lunch_time_logo}/>
                             <h4 className={styles.lunch_clock}>16:00-16:30</h4>
                         </div>
-                    </>
+                    </div>
                 )}
                 {active_day == 1 && (
                     <div>
@@ -97,7 +98,6 @@ function Conferences_Program(){
 
                     </div>)
                 }
-            </div>
         </div>
     );
 

@@ -6,6 +6,8 @@ import Conferences from "../components/Conferences.jsx";
 import Workshops from "../components/Workshops.jsx";
 import MeetTheTeam from "../components/MeetTheTeam.jsx";
 import Conferences_Program from "../components/Conferences_Program.jsx";
+import Sponsors from "../components/Sponsors.jsx";
+import Contact from "../components/Contact.jsx";
 
 
 function Home(){
@@ -38,6 +40,8 @@ function Home(){
             <Workshops/>
             <Conferences_Program/>
             <MeetTheTeam/>
+            <Sponsors/>
+            <Contact/>
         </div>
     )
 }

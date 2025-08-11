@@ -1,0 +1,110 @@
+.sponsors_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsors_title{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    color: #0D58A3;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.sponsors_description{
+    font-size: 20px;
+    text-align: center;
+    color: #0e2965;
+    margin-bottom: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.sponsors_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 12rem;
+}
+
+.sponsor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+    position: relative;
+}
+
+.sponsor:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sponsor_photo{
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    opacity: 0.6;
+}
+
+.sponsor_name{
+    font-size: 18px;
+    font-weight: bold;
+    color: #16336e;
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    margin: 0;
+    top:50%;
+    text-shadow: 0 4px 8px rgb(157, 152, 152);
+}
+
+.sponsors_offer{
+    font-size: 18px;
+    color: #0e2965;
+    font-family: "Roboto", sans-serif;
+    margin-top: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .sponsors_list {
+        padding: 0 2rem;
+    }
+
+    .sponsor {
+        max-width: 150px;
+    }
+
+    .sponsor_photo {
+        width: 120px;
+        height: 80px;
+    }
+
+    .sponsor_name {
+        font-size: 16px;
+    }
+
+    .sponsors_offer {
+        font-size: 16px;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .sponsors_description{
+        font-size: 18px;
+        padding: 0 2rem;
+    }
+
+}
+
