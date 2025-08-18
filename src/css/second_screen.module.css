@@ -91,6 +91,8 @@
     color: #1A99C7;
     text-shadow: 2px 2px 4px #0A214D;
     cursor: pointer;
+    background-color: rgba(178, 223, 239, 0);
+    border: none;
 }
 
 .subtitles:hover{

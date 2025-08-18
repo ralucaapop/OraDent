@@ -8,13 +8,17 @@ import MeetTheTeam from "../components/MeetTheTeam.jsx";
 import Conferences_Program from "../components/Conferences_Program.jsx";
 import Sponsors from "../components/Sponsors.jsx";
 import Contact from "../components/Contact.jsx";
+import Edition1 from "../components/Edition1.jsx";
+import Edition2 from "../components/Edition2.jsx";
+import NavBar from "../components/NavBar.jsx";
 
 
 function Home(){
 
     return(
         <div>
-        <div className={styles.home_container}>
+            <NavBar/>
+        <div id="home" className={styles.home_container}>
             <img src={logo} alt="Oradent Logo" className={styles.logo} />
 
             <h1 className={styles.oradent_title}>ORADENT</h1>
@@ -34,14 +38,37 @@ function Home(){
 
             <div className={styles.buildings_image}></div>
         </div>
-            <SecondScreen/>
-            <EventHistory/>
-            <Conferences/>
-            <Workshops/>
-            <Conferences_Program/>
-            <MeetTheTeam/>
-            <Sponsors/>
-            <Contact/>
+            <div id="current_event">
+                <SecondScreen/>
+            </div>
+            <div id="past_editions">
+                <EventHistory />
+            </div>
+            <div id="current_conferences">
+                <Conferences/>
+            </div>
+            <div id="current_workshops">
+                <Workshops />
+            </div>
+            <div id="program">
+                <Conferences_Program />
+            </div>
+            <div id="team">
+                <MeetTheTeam/>
+            </div>
+            <div id="edition1">
+                <Edition1/>
+            </div>
+            <div id="edition2">
+                <Edition2/>
+            </div>
+           <div id="sponsors">
+               <Sponsors/>
+           </div>
+          <div id="contact">
+              <Contact/>
+          </div>
+
         </div>
     )
 }

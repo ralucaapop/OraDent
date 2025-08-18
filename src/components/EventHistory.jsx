@@ -12,11 +12,6 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import FastfoodIcon from '@mui/icons-material/Fastfood';
-import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import HotelIcon from '@mui/icons-material/Hotel';
-import RepeatIcon from '@mui/icons-material/Repeat';
 import Typography from '@mui/material/Typography';
 
 
@@ -27,6 +22,13 @@ function EventHistory(){
         { id: 3, size: 25, top: '60%', left: '20%' },
         { id: 4, size: 50, top: '70%', left: '70%' },
     ];
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        console.log(element)
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
     return(
         <div className={styles.event_history_container}>
             <div className={styles.circles_wrapper}>
@@ -70,7 +72,7 @@ function EventHistory(){
 
                     <TimelineContent sx={{ py: '12px', px: 2 }}>
                         <Typography variant="h6" component="span" className={styles.edition_name}>
-                            EDIȚIA I
+                            <button className={styles.edition_name} onClick={()=>scrollToSection("edition1")}>EDIȚIA I</button>
                         </Typography>
                         <Typography>2023</Typography>
                     </TimelineContent>
@@ -99,7 +101,7 @@ function EventHistory(){
                         align="right"
                         variant="body2">
                         <Typography variant="h6" component="span" className={styles.edition_name}>
-                            EDIȚIA II
+                            <button  className={styles.edition_name} onClick={()=>scrollToSection("edition2")}>EDIȚIA II</button>
                         </Typography>
                         <Typography>2024</Typography>
 

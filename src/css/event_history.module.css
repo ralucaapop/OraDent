@@ -1,6 +1,8 @@
 .event_history_container{
     min-height: 100vh;
     background-color: white;
+    position: relative;
+
 }
 
 .header_section{
@@ -61,6 +63,8 @@
     text-align: center;
     color: #16336e;
     cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
 
 .edition_name:hover{
@@ -101,11 +105,6 @@
     margin: 0 0 0 auto;
 }
 
-.event_history_container {
-    position: relative;
-    /* restul stilurilor tale */
-}
-
 .circles_wrapper {
     position: absolute;
     top: 0;
@@ -119,7 +118,7 @@
 .circle {
     position: absolute;
     border-radius: 50%;
-    background-color: rgb(63, 207, 231); /* sau orice culoare vrei */
+    background-color: rgb(63, 207, 231);
     z-index: 0;
 }
 

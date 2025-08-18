@@ -3,6 +3,15 @@ import surprise from '../assets/surprise.png';
 import workshop from '../assets/workshop.png';
 import conference from '../assets/conference.png';
 function SecondScreen(){
+
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        console.log(element)
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return(
         <div className={styles.second_screen_container}>
 
@@ -14,21 +23,21 @@ function SecondScreen(){
                 <hr className={styles.horizontal_line}/>
                 <div className={styles.conference_section}>
                     <img src={conference} className={styles.conference_img}/>
-                    <h3 className={styles.subtitles}>Conferințe</h3>
+                    <button className={styles.subtitles} onClick={()=>scrollToSection("current_conferences")}>Conferințe</button>
                     <p className={styles.section_text}>Specialiști de renume vor împărtăși cele mai noi tendințe,
                         cercetări și soluții din medicina dentară</p>
                 </div>
                 <hr className={styles.horizontal_line}/>
                 <div className={styles.workshop_section}>
                     <img src={workshop} className={styles.workshop_img}/>
-                    <h3 className={styles.subtitles}>Workshop-uri</h3>
+                    <button className={styles.subtitles} onClick={()=>scrollToSection("current_workshops")}>Workshop-uri</button>
                     <p className={styles.section_text}>Ateliere interactive cu teme variate, o experiență practică,
                         alături de traineri dedicați și colegi pasionați.</p>
                 </div>
                 <hr className={styles.horizontal_line}/>
                 <div className={styles.surprise_section}>
                     <img src={surprise} className={styles.surprise_img}/>
-                    <h3 className={styles.subtitles}>Surprize</h3>
+                    <button className={styles.subtitles} onClick={()=>scrollToSection("sponsors")}>Surprize</button>
                     <p className={styles.section_text}>Tombole și momente speciale - adăugăm un strop de surpriză
                         fiecărei zile împreună cu partenerii noștri</p>
                 </div>
